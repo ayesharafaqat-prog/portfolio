@@ -10,7 +10,7 @@ const Contact = () => {
 
     const formData = new FormData(e.target);
 
-    // Web3Forms Access Key Updated
+    // Web3Forms Access Key
     formData.append("access_key", "262e6c63-73dc-430c-93fd-77962a86747d");
 
     try {
@@ -41,16 +41,17 @@ const Contact = () => {
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', alignItems: 'start' }}>
         
-        {/* Left Side: Contact Info */}
+        {/* Left Side: Contact Info Cards */}
         <div style={{ textAlign: 'left', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-          <div style={{ padding: '1.5rem', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '15px', background: 'rgba(255,255,255,0.03)' }}>
+          
+          <div className="border border-gray-300 dark:border-white/20 bg-gray-50/50 dark:bg-white/5" style={{ padding: '1.5rem', borderRadius: '15px' }}>
             <h4 style={{ fontSize: '1.1rem', color: '#38bdf8', marginBottom: '0.3rem' }}>Email Me</h4>
             <a href="mailto:ayesharafaqat735@gmail.com" style={{ color: 'inherit', textDecoration: 'none', fontWeight: '500' }}>
               ayesharafaqat735@gmail.com
             </a>
           </div>
 
-          <div style={{ padding: '1.5rem', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '15px', background: 'rgba(255,255,255,0.03)' }}>
+          <div className="border border-gray-300 dark:border-white/20 bg-gray-50/50 dark:bg-white/5" style={{ padding: '1.5rem', borderRadius: '15px' }}>
             <h4 style={{ fontSize: '1.1rem', color: '#34d399', marginBottom: '0.3rem' }}>Call / WhatsApp</h4>
             <a href="https://wa.me/923354184150" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none', fontWeight: '500' }}>
               +92 335 4184150
@@ -69,7 +70,7 @@ const Contact = () => {
             </a>
             <a 
               href="mailto:ayesharafaqat735@gmail.com" 
-              className="btn-outline"
+              className="btn-outline border border-gray-400 dark:border-white/30"
               style={{ flex: 1, textAlign: 'center' }}
             >
               Send Email
@@ -77,7 +78,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Right Side: Working Email Form */}
+        {/* Right Side: Inputs with Proper Light/Dark Borders */}
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem', textAlign: 'left' }}>
           <div>
             <label style={{ display: 'block', marginBottom: '0.4rem', fontSize: '0.9rem', opacity: 0.9 }}>Your Name</label>
@@ -86,7 +87,8 @@ const Contact = () => {
               name="name" 
               placeholder="Enter your name" 
               required 
-              style={{ width: '100%', padding: '0.8rem 1rem', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.05)', color: 'inherit', outline: 'none' }} 
+              className="border border-gray-300 dark:border-white/20 bg-gray-50 dark:bg-white/5 text-gray-900 dark:text-white"
+              style={{ width: '100%', padding: '0.8rem 1rem', borderRadius: '10px', outline: 'none' }} 
             />
           </div>
 
@@ -97,7 +99,8 @@ const Contact = () => {
               name="email" 
               placeholder="Enter your email" 
               required 
-              style={{ width: '100%', padding: '0.8rem 1rem', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.05)', color: 'inherit', outline: 'none' }} 
+              className="border border-gray-300 dark:border-white/20 bg-gray-50 dark:bg-white/5 text-gray-900 dark:text-white"
+              style={{ width: '100%', padding: '0.8rem 1rem', borderRadius: '10px', outline: 'none' }} 
             />
           </div>
 
@@ -108,7 +111,8 @@ const Contact = () => {
               placeholder="Write your message here..." 
               rows="4" 
               required 
-              style={{ width: '100%', padding: '0.8rem 1rem', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.05)', color: 'inherit', outline: 'none', resize: 'vertical' }}
+              className="border border-gray-300 dark:border-white/20 bg-gray-50 dark:bg-white/5 text-gray-900 dark:text-white"
+              style={{ width: '100%', padding: '0.8rem 1rem', borderRadius: '10px', outline: 'none', resize: 'vertical' }}
             ></textarea>
           </div>
 

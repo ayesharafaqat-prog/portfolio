@@ -1,31 +1,66 @@
 'use client';
 import React from 'react';
-import { projects } from './assets';
 
 const Work = () => {
+  const projects = [
+    {
+      title: "Space Website",
+      description: "Modern space website built with html & css",
+      link: "#"
+    },
+    {
+      title: "Movie App",
+      description: "A movie app built with React and CSS, fetching data from an API.",
+      link: "#"
+    },
+    {
+      title: "E-Commerce App",
+      description: "A full-stack e-commerce application built with React and Node.js.",
+      link: "#"
+    }
+  ];
+
   return (
     <section id="work" style={{ padding: '6rem 8%', textAlign: 'center' }}>
-      <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem' }}>My Work</h2>
+      <h2 style={{ fontSize: '2.5rem', marginBottom: '3rem', fontWeight: 'bold' }}>My Work</h2>
+
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
         {projects.map((project, index) => (
           <div 
             key={index} 
+            className="border border-gray-400 dark:border-white/20 bg-white dark:bg-white/5"
             style={{ 
               padding: '2rem', 
-              border: '1px solid rgba(255,255,255,0.15)', 
-              borderRadius: '15px',
-              background: 'rgba(255,255,255,0.03)',
-              textAlign: 'left'
+              borderRadius: '16px', 
+              textAlign: 'left',
+              display: 'flex',
+              flexDirection: 'column',
+              justify: 'space-between',
+              border: '1px solid #cbd5e1', /* Solid visible border in light mode */
+              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.05)'
             }}
           >
-            <h3 style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>{project.title}</h3>
-            <p style={{ opacity: 0.8, marginBottom: '1.5rem', lineHeight: '1.5' }}>{project.description}</p>
+            <div>
+              <h3 style={{ fontSize: '1.4rem', fontWeight: 'bold', marginBottom: '0.8rem' }}>
+                {project.title}
+              </h3>
+              <p style={{ opacity: 0.8, fontSize: '0.95rem', lineHeight: '1.5', marginBottom: '1.5rem' }}>
+                {project.description}
+              </p>
+            </div>
+
             <a 
               href={project.link} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="btn-outline"
-              style={{ padding: '0.4rem 1rem', fontSize: '0.9rem' }}
+              style={{ 
+                display: 'inline-block', 
+                width: 'fit-content',
+                textDecoration: 'none',
+                padding: '0.5rem 1.2rem',
+                borderRadius: '25px',
+                fontSize: '0.9rem',
+                border: '1px solid #64748b', /* Solid border for button */
+                color: 'inherit'
+              }}
             >
               View Project
             </a>
