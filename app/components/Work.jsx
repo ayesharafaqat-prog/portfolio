@@ -6,17 +6,17 @@ const Work = () => {
     {
       title: "Space Website",
       description: "Modern space website built with html & css",
-      link: "#"
+      link: "https://ayesharafaqat-prog.github.io/space/"
     },
     {
       title: "Movie App",
       description: "A movie app built with React and CSS, fetching data from an API.",
-      link: "#"
+      link: "https://front-end-seven-jet.vercel.app/"
     },
     {
       title: "E-Commerce App",
       description: "A full-stack e-commerce application built with React and Node.js.",
-      link: "#"
+      link: "https://digital-psi-ashy.vercel.app/"
     }
   ];
 
