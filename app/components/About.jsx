@@ -7,9 +7,9 @@ const About = () => {
     <section id="about" style={{ padding: '6rem 8%', textAlign: 'center' }}>
       <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>About Me</h2>
       
-      {/* Bio Paragraph */}
+      {/* Bio Paragraph - Updated for Developer & Instructor */}
       <p style={{ maxWidth: '750px', margin: '0 auto 2rem auto', lineHeight: '1.7', opacity: 0.9, fontSize: '1.05rem' }}>
-        I'm a passionate <strong>Frontend Developer</strong> who turns ideas into elegant, high-performing digital experiences. I specialize in building responsive, fast, and visually engaging web applications using modern technologies like React and Next.js.
+        I'm a passionate <strong>Frontend Developer</strong> and <strong>Technical Instructor</strong> who turns ideas into elegant, high-performing digital experiences. I specialize in building responsive web applications using modern technologies like React and Next.js, while also loving to mentor and help fellow learners master coding fundamentals.
       </p>
 
       {/* Quick Highlights / Facts */}
@@ -19,8 +19,8 @@ const About = () => {
           <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Featured Projects</p>
         </div>
         <div style={{ padding: '1rem 1.5rem', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '12px', background: 'rgba(255,255,255,0.03)', textAlign: 'center', minWidth: '160px' }}>
-          <h3 style={{ fontSize: '1.8rem', color: '#a855f7' }}>100%</h3>
-          <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Responsive Design</p>
+          <h3 style={{ fontSize: '1.8rem', color: '#a855f7' }}>Mentor</h3>
+          <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Teaching & Guiding</p>
         </div>
         <div style={{ padding: '1rem 1.5rem', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '12px', background: 'rgba(255,255,255,0.03)', textAlign: 'center', minWidth: '160px' }}>
           <h3 style={{ fontSize: '1.8rem', color: '#34d399' }}>Clean</h3>
