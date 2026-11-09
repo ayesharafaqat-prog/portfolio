@@ -31,4 +31,15 @@ export const projects = [
     description: "A full-stack e-commerce application built with React and Node.js.",
     link: "https://digital-psi-ashy.vercel.app/",
   },
+  {
+  title: "Stone Paper Scissors Game",
+  description: "An interactive browser-based game built with JavaScript...",
+  liveUrl: "https://ayesharafaqat-prog.github.io/stone-paper-scissors/", // 👈 Yeh add karna hai
+},
+
+{
+  title: "Tic-Tac-Toe Game",
+  description: "A classic two-player Tic-Tac-Toe game built with modern frontend logic...",
+  liveUrl: "https://ayesharafaqat-prog.github.io/tic-tac-toe/", // 👈 Yeh add karna hai
+}
 ];

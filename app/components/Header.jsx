@@ -34,7 +34,8 @@ const Header = () => {
       </p>
 
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-        <a href="#projects" className="btn-primary" style={{ textDecoration: 'none' }}>
+        {/* Fixed link to point directly to the Work section ID (#work) */}
+        <a href="#work" className="btn-primary" style={{ textDecoration: 'none' }}>
           Explore My Work
         </a>
         
