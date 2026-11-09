@@ -17,7 +17,21 @@ const Work = () => {
       title: "E-Commerce App",
       description: "A full-stack e-commerce application built with React and Node.js.",
       link: "https://digital-psi-ashy.vercel.app/"
-    }
+    },
+    {
+     title: "Stone Paper Scissors Game",
+     description: "An interactive browser-based game built with JavaScript, featuring real-time score tracking and clean UI design.",
+     techStack: ["JavaScript", "HTML5", "CSS3"],
+     liveUrl: "https://ayesharafaqat-prog.github.io/stone-paper-scissors/",
+     githubUrl: "https://github.com/ayesharafaqat-prog/stone-paper-scissors",
+},
+{
+    title: "Tic-Tac-Toe Game",
+    description: "A classic two-player Tic-Tac-Toe game built with modern frontend logic, interactive grid states, and win detection.",
+    techStack: ["JavaScript", "HTML5", "CSS3"],
+    liveUrl: "https://ayesharafaqat-prog.github.io/tic-tac-toe/",
+    githubUrl: "https://github.com/ayesharafaqat-prog/tic-tac-toe",
+  }
   ];
 
   return (
