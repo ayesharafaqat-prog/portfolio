@@ -19,19 +19,15 @@ const Work = () => {
       link: "https://digital-psi-ashy.vercel.app/"
     },
     {
-     title: "Stone Paper Scissors Game",
-     description: "An interactive browser-based game built with JavaScript, featuring real-time score tracking and clean UI design.",
-     techStack: ["JavaScript", "HTML5", "CSS3"],
-     liveUrl: "https://ayesharafaqat-prog.github.io/stone-paper-scissors/",
-     githubUrl: "https://github.com/ayesharafaqat-prog/stone-paper-scissors",
-},
-{
-    title: "Tic-Tac-Toe Game",
-    description: "A classic two-player Tic-Tac-Toe game built with modern frontend logic, interactive grid states, and win detection.",
-    techStack: ["JavaScript", "HTML5", "CSS3"],
-    liveUrl: "https://ayesharafaqat-prog.github.io/tic-tac-toe/",
-    githubUrl: "https://github.com/ayesharafaqat-prog/tic-tac-toe",
-  }
+      title: "Stone Paper Scissors Game",
+      description: "An interactive browser-based game built with JavaScript, featuring real-time score tracking and clean UI design.",
+      link: "https://ayesharafaqat-prog.github.io/stone-paper-scissors/"
+    },
+    {
+      title: "Tic-Tac-Toe Game",
+      description: "A classic two-player Tic-Tac-Toe game built with modern frontend logic, interactive grid states, and win detection.",
+      link: "https://ayesharafaqat-prog.github.io/tic-tac-toe/"
+    }
   ];
 
   return (
@@ -49,7 +45,7 @@ const Work = () => {
               textAlign: 'left',
               display: 'flex',
               flexDirection: 'column',
-              justify: 'space-between',
+              justifyContent: 'space-between',
               border: '1px solid #cbd5e1', /* Solid visible border in light mode */
               boxShadow: '0 4px 15px rgba(0, 0, 0, 0.05)'
             }}
@@ -65,6 +61,8 @@ const Work = () => {
 
             <a 
               href={project.link} 
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ 
                 display: 'inline-block', 
                 width: 'fit-content',
